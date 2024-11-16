@@ -1,0 +1,97 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-card {
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+@media screen and (width: 912px) {
+  .login-card {
+    height: 30%;
+  }
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50%;
+}
+.login-form div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.login-form div input {
+  height: 40px;
+}
+.login-button {
+  width: 80%;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+}
+.logo-container {
+  width: 100%;
+  min-height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 20%;
+  height: 100%;
+}
+.error-message {
+  color: red;
+  display: flex;
+  align-self: flex-start;
+  font-weight: 600;
+}
+@media screen and (max-width: 850px) {
+  .logo-container {
+    height: 30%;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .login-form div input {
+    height: 20%;
+  }
+  .login-button {
+    height: 25px;
+  }
+  .login-card {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 855px) {
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+  .logo-container {
+    height: 30%;
+  }
+  .login-card {
+    height: 50%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .login-card {
+    height: 50%;
+    width: 40%;
+  }
+}
